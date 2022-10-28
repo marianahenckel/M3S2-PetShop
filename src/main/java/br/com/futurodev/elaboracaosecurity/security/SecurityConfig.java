@@ -44,7 +44,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/login").permitAll() // endpoint "login" liberado à todos
+                .antMatchers("/login").permitAll() // endpoint "login" liberado a todos
                 .antMatchers("/pets").hasAnyAuthority("PETS", "ADMIN") // Liberado somente para usuários com a devida autorização
                 .antMatchers("/tutores").hasAnyAuthority("TUTORES", "ADMIN") // Liberado somente para usuários com a devida autorização
                 .anyRequest().authenticated() // Todos os demais endpoints precisam de autentição
