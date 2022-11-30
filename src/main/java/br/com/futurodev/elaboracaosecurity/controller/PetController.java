@@ -25,7 +25,7 @@ public class PetController {
     public Pet putPets(@RequestBody Pet pet){
         return petService.salvar(pet);
     }@DeleteMapping
-    public boolean deletePets(@RequestBody Pet pet){
+    public boolean deletePet(@RequestBody Pet pet){
         petService.excluir(pet.getId());
         return true;
     }

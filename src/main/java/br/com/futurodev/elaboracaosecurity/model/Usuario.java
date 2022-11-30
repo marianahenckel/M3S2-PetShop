@@ -10,10 +10,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-/*
- * Step 5 - Model Usuário
- * ... implements UserDetails ...
- */
+
 @Data
 @Builder
 public class Usuario implements UserDetails {

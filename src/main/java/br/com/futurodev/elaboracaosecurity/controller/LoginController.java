@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Step 16 - Criar endpoint para realizar login
  */
 @RestController
-@RequestMapping(value = "login")
+@RequestMapping(value = "/login")
 public class LoginController {
 
     @Autowired private LoginService loginService;
